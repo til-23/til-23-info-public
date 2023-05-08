@@ -16,7 +16,7 @@ Qualifiers Timeline
 
 This will be the timeline for the Qualifiers.
 
-**The whole qualifiers period will be from 11 May 2023, 1200H to 31 May 2023, 1200H (GMT+08/SGT)**
+**The whole qualifiers period will be from 12 May 2023, 0900H to 31 May 2023, 1200H (GMT+08/SGT)**
 
 .. list-table::
     :widths: 40 25 15
@@ -26,8 +26,8 @@ This will be the timeline for the Qualifiers.
       - Date
       - Time (in GMT+08/SGT)
     * - Release of Training Videos
-      - 11 May / Thurs
-      - 1200H
+      - 12 May / Fri
+      - 0900H
     * - Introduction Session (Q&A)
       - 15 May / Mon
       - 1500H
