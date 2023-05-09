@@ -11,28 +11,6 @@ What is the ReID Challenge about?
 	* The second model will identify whether a query plushie crop matches a target plushie crop, ie, are both plushies in the different scenes the same one.
 * You will be provided a training set for your use. You are allowed to include additional data to train your model, terms & conditions apply (refer to “Important rules for participants” below for more information).
 * A separate test dataset will be released and you are supposed to evaluate your model using this test dataset which **will** be used as a judging criteria for the qualifiers.
-
-
-Training Materials Provided
-###########################
-
-Training videos and boilerplate code walkthrough will be given to you to complete the ReID challenge, refer to the training videos uploaded. These topics include:
-
-* Object Detection
-    1. Overview and definition
-    2. YOLO
-        a. Theory and code
-    3. Other objection detection models
-        a. Mobilenet- SSD
-        b. Fast R-CNN
-        
-* ReID
-    1. Overview and definition
-    2. Siamese network theory
-    3. Implementing siamese network on pytorch
-        a. Demo of custom dataset and transforms in pytorch
-    4. Explain theory with contrastive loss and triplet loss
-        a. Recommend students to use triplet loss for better accuracy
         
 
 Example image and annotation
