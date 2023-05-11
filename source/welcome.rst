@@ -1,25 +1,29 @@
 Welcome
 ~~~~~~~
 
-Welcome to Today-I-Learned AI 2023, an AI and Robotics hackathon!
+Welcome to DSTA's highly anticipated BrainHack TIL 2023!
 
-Whether you are learning Artificial Intelligence for the first time or already have some experience in AI development,
-we are thrilled to have you join us in this exciting event.
+You are tasked with the security management of a high level conference between foreign delegates held at “Crown Renaissance Resort”. 
+You have received reports that a terrorist organisation is planning to kidnap Mr. Dastan, the President of United AI, who chairs the conference. 
+The intelligence team has also managed to retrieve pictures of the kidnapper, also known as “White Stinger”.
 
-Participants can look forward to a comprehensive hands-on learning experience covering various AI models as well as 
-basic autonomous robotics.
+Your task is to prepare for a search-and-rescue mission in the event that Mr. Dastan is kidnapped. To achieve this, two models are needed:
 
-The competition runs in two phases, Qualifiers and Finals. The best-performing teams will qualify to 
-participate in the Finals stage of the competition, and have the opportunity
-to experience robotics development and compete for attractive prizes!
+- Computer vision models that are able to detect and identify (1) Mr. Dastan, and (2) White Stinger. 
+- Automatic speech recognition model to interpret your intelligence teams communications about the whereabouts of Mr. Dastan
 
+We are thrilled to have you join us in this exciting event, where you will be able to learn from and compete against like-minded individuals in the field. 
 Best of luck to all participants, and may the best AI win!
 
 
 Timeline for Today-I-Learned AI 2023
 ####################################
 
-This will be the timeline for the Today-I-Learned AI 2023 competition.
+The competition runs in two phases, Qualifiers and Finals. The best-performing teams will qualify to 
+participate in the Finals stage of the competition, and have the opportunity
+to develop on a real robot and compete for attractive prizes!
+
+This is the timeline for the Today-I-Learned AI 2023 competition.
 
 .. 
     .. list-table::
