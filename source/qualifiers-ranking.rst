@@ -4,10 +4,6 @@ Qualifiers - Leaderboard
 How will your team be evaluated in the qualifiers?
 ##################################################
 
-Example Scoreboard (Qualifiers - Placeholder)
-*********************************************
-
-
 There will be three different leaderboards shown **per tier** in the competition platform. Hence, there will be six different leaderboards, they are:
 
 1. Novice - Object Detection & ReID
