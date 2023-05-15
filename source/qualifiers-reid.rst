@@ -59,7 +59,7 @@ Skeleton Code
 Evaluation - How will the ReID Challenge be evaluated?
 ######################################################
 
-* The challenge will be evaluated using mAP, `mean average precision <https://www.v7labs.com/blog/mean-average-precision>`_. There will only be two classes - suspect and non suspect. A plushie is classified as a suspect if it matches the query plushie. In the example below, the red elephant is the query. Your object detection model should detect all three plushies and classify the elephant as a suspect (green) and the other plushies as a non suspect (red).
+* The challenge will be evaluated using mAP (`mean average precision <https://www.v7labs.com/blog/mean-average-precision>`_) with IOU\@0.5, . There will only be two classes - suspect and non suspect. A plushie is classified as a suspect if it matches the query plushie. In the example below, the red elephant is the query. Your object detection model should detect all three plushies and classify the elephant as a suspect (green) and the other plushies as a non suspect (red).
         
         .. image:: _static/img/reid_task.png
             :align: center
@@ -71,9 +71,33 @@ Evaluation - How will the ReID Challenge be evaluated?
 Submission - How to submit your final evaluation?
 #################################################
 
-* The submission format will be a bounding box with 4 coordinates, classes as well as a final answer of the ReID appended at the end.
-* [(a,b,c,d),toys,suspect/non-suspect]
+* The submission format will be the standard CSV (comma-seperated values) format. Please ensure that the submissions are in .csv with format matching the following structure as shown below:
 
+.. list-table:: submission.csv
+    :widths: 40 25 15 15 15 15 15
+    :header-rows: 1
+
+    * - img_name
+      - class
+      - confidence
+      - ymin
+      - xmin
+      - ymax
+      - xmax
+    * - image_0000.png
+      - suspect
+      - 0.5
+      - 130
+      - 12
+      - 340
+      - 300
+    * - ...
+      - ...
+      - ...
+      - ...
+      - ...
+      - ...
+      - ...
 
 
 Additional rules for participants
