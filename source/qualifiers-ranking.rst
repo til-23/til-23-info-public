@@ -23,48 +23,32 @@ We will be adopting an **equal scoring weightage** of 50% Object Detection & ReI
 To illustrate on how your team will be evaluated, one set of three example leaderboards are as shown below:
 
 .. list-table:: Object Detection & ReID leaderboard (in order of ranking)
-    :widths: 15 30 25 25 25
+    :widths: 15 30 25
     :header-rows: 1
 
     * - Ranking
       - Team Name
-      - Object Detection (mAP %)
-      - ReID (accuracy %)
-      - Overall (%)
+      - mAP (%)
     * - 1
       - Team A
-      - 79.505
-      - 66.101
       - 72.803
     * - 2
       - Team B
-      - 72.005
-      - 70.010
       - 71.008
     * - 3
       - Team E
-      - 72.005
-      - 65.120
       - 68.563
     * - 4
       - Team C
-      - 75.605
-      - 50.125
       - 62.865
     * - 5
       - Team D
-      - 65.605
-      - 50.125
       - 57.865
     * - 6
       - Team G
-      - 64.605
-      - 50.175
       - 57.390
     * - 7
       - Team F
-      - 64.605
-      - 50.125
       - 57.365
     
 .. list-table:: ASR leaderboard (in order of ranking)
