@@ -58,7 +58,7 @@ Flouting any of these rules results in disqualification.
 - To qualify for the finals, your code must be able to run on the provided online development environment, so as to ensure fairness.
 - Do not plagiarise code from other teams
 - Do not share your models with other teams
-- No manual annotating of labels for the test set is allowed 
+- No manual annotating of labels for the test set 
 - No purchasing of datasets
 - You are **NOT ALLOWED to call external APIs** such as Amazon Rekognition to do computer vision tasks, or such as IBM Watson, AWS speech-to-text or any other paid transcribing services to do the transcribing.
 - You are **NOT ALLOWED** to purchase AI models. Rule of thumb is, you should not be purchasing any data, models, or subscriptions for this competition.

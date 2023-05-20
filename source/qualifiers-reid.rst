@@ -51,7 +51,7 @@ Folder structure
 	* plushie003.txt
 	
 Skeleton Code
-################
+#############
 
 * A skeleton code will be given to you, along with the training materials provided.
 
@@ -68,39 +68,8 @@ Evaluation - How will the ReID Challenge be evaluated?
 * Note that the test plushies will be completely unseen to your model, ie, they are different to the plushies from the training dataset.
 
 
-Submission - How to submit your final evaluation?
-#################################################
-
-* The submission format will be the standard CSV (comma-seperated values) format. Please ensure that the submissions are in .csv with format matching the following structure as shown below:
-
-.. list-table:: submission.csv
-    :widths: 40 25 15 15 15 15 15
-    :header-rows: 1
-
-    * - img_name
-      - class
-      - confidence
-      - ymin
-      - xmin
-      - ymax
-      - xmax
-    * - image_0000.png
-      - suspect
-      - 0.5
-      - 130
-      - 12
-      - 340
-      - 300
-    * - ...
-      - ...
-      - ...
-      - ...
-      - ...
-      - ...
-      - ...
-
-
 Additional rules for participants
 #################################
 
 * You need not necessarily use the boilerplate code and can write your own model code for the competition. Any form of deep learning techniques are fine i.e supervised, semi-supervised or self-supervised method, including loading of pretraining models.
+* You may not annotate the images of the test set.
