@@ -72,4 +72,4 @@ Additional rules for participants
 #################################
 
 * You need not necessarily use the boilerplate code and can write your own model code for the competition. Any form of deep learning techniques are fine i.e supervised, semi-supervised or self-supervised method, including loading of pretraining models.
-* You may not annotate the images of the test set.
+* For avoidance of doubt, you may not annotate the images of the test set.

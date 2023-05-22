@@ -55,7 +55,7 @@ General Rules
 
 Flouting any of these rules results in disqualification.
 
-- To qualify for the finals, your code must be able to run on the provided online development environment, so as to ensure fairness.
+- To qualify for the finals, your TRAINING and INFERENCE code must be able to run on the provided online development environment (Noteable), so as to ensure equality of resources.
 - Do not plagiarise code from other teams
 - Do not share your models with other teams
 - No manual annotating of labels for the test set 
