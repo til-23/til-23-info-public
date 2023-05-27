@@ -50,15 +50,16 @@ Note About Submission
 Note that from 19 May 2023 1200H, to 31 May 2023 1159H, you will be tasked to train your models using the **train set**. Then, perform inference on the **test set** and submit your results to the Zindi platform. **The evaluation criteria for qualifying to the finals will be based on the test set.** 
 
 
-General Rules
-#############
+General Rules (Updated 27 May 2023)
+###################################
 
 Flouting any of these rules results in disqualification.
 
-- To qualify for the finals, your TRAINING and INFERENCE code must be able to run on the provided online development environment (Noteable), so as to ensure equality of resources.
+- To qualify for the finals, your TRAINING and INFERENCE code must be able to run on the provided online coding environment(s) or Google Colab **free-tier** . 
+  This is to promote a fairer competition for teams that own less resources.
 - Do not plagiarise code from other teams
 - Do not share your models with other teams
-- No manual annotating of labels for the test set 
+- **No manual annotating of labels for the test set**
 - No purchasing of datasets
 - You are **NOT ALLOWED to call external APIs** such as Amazon Rekognition to do computer vision tasks, or such as IBM Watson, AWS speech-to-text or any other paid transcribing services to do the transcribing.
 - You are **NOT ALLOWED** to purchase AI models. Rule of thumb is, you should not be purchasing any data, models, or subscriptions for this competition.
