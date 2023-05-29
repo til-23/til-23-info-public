@@ -16,8 +16,6 @@ Qualifiers Timeline
 
 This will be the timeline for the Qualifiers.
 
-**The whole qualifiers period will be from 12 May 2023, 0900H to 31 May 2023, 1200H (GMT+08/SGT)**
-
 .. list-table::
     :widths: 40 25 15
     :header-rows: 1
