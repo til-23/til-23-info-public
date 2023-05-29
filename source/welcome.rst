@@ -33,7 +33,7 @@ This is the timeline for the Today-I-Learned AI 2023 competition.
         * - Self-Paced Training (Virtual)
         - 11 May onwards
         * - Qualifiers (Virtual)
-        - 19 - 31 May 
+        - 19 - 2 Jun 
         * - Robotics Familiarisation (Physical)
         - 7 - 16 Jun
         * - Finals (Physical)

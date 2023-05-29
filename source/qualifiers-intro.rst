@@ -35,11 +35,11 @@ This will be the timeline for the Qualifiers.
       - 19 May / Fri
       - 1200H
     * - Submission Deadline for the Test Dataset Prediction
-      - 31 May / Wed
-      - 1200H
+      - 02 Jun / Fri
+      - 1800H
     * - Announcement of Finalists
-      - 2 Jun / Fri
-      - 1730H 
+      - 5 Jun / Mon
+      - - 
 
 
 Note About Submission
@@ -47,16 +47,20 @@ Note About Submission
 
 **Do note the different datasets given, when and what to submit**
 
-Note that from 19 May 2023 1200H, to 31 May 2023 1159H, you will be tasked to train your models using the **train set**. Then, perform inference on the **test set** and submit your results to the Zindi platform. **The evaluation criteria for qualifying to the finals will be based on the test set.** 
+You are tasked to train your models using the **train set**.
+Then, perform inference on the **test set** and submit your results to the Zindi platform. 
+**The evaluation criteria for qualifying to the finals is based on the test set.** 
 
 
-General Rules (Updated 27 May 2023)
-###################################
+General Rules (**Updated** 29 May 2023)
+#######################################
 
 Flouting any of these rules results in disqualification.
 
-- To qualify for the finals, your TRAINING and INFERENCE code must be able to run on the provided online coding environment(s) or Google Colab **free-tier** . 
-  This is to promote a fairer competition for teams that own less resources.
+- To qualify for the finals, your TRAINING and INFERENCE code must be able to run on either a Noteable or Google Colab coding
+  environment. This is to facilitate verification of submitted codes. If using Colab, **make sure that your code can at least run on free-tier
+  resources**. When submitting results files via the Zindi platform, add your **public** notebook link in the **Comment** 
+  panel of the submission page.
 - Do not plagiarise code from other teams
 - Do not share your models with other teams
 - **No manual annotating of labels for the test set**
