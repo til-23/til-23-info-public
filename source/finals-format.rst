@@ -41,16 +41,15 @@ Rules for the Finals
 ####################
 
 **Plushie ReID (Friend or Foe - Visual):** 
-  1. Usage of robots to take pics of plushies is allowed, but do note that the familiarisation venue is not 
-     the same as the finals venue. Images not released by the TIL committee and plushies not seen at the familiarisation
-     venue are not allowed in training/fine-tuning data. 
-  2. Do not bring your own plushies to the familiarisation or final venue.
+  1. Usage of robots to take pics of plushies for finetuning is allowed, but do note that the familiarisation venue is not 
+     the same as the finals venue. Plushies not seen at the familiarisation venue are not allowed for training/fine-tuning. 
+  2. Do not bring your own plushies to the Familiarisation or Finals venue.
 
 **Speaker Identification (Friend or Foe - Audio) and ASR (Decoding Digits)**
-  1. Not allowed to record your own external datasets. Similar to qualifiers, we will audit/verify the code during finals.
+  1. Not allowed to record your own external datasets. Similar to qualifiers, we will audit/verify your training code during finals.
 
 **Robotics:**
-  1. Must use reporting service and localization apis that are provided.
+  1. Must use ReportingService and LocalizationService APIs that are provided.
 
 
 Competition Schedule
