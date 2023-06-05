@@ -47,7 +47,8 @@ a. When your robot arrives at a **Task** checkpoint, the robot will need to comp
 b. When your robot arrives at a **Detour** checkpoint, the robot will automatically receive the coordinates of the next Task checkpoint 
    and the robot will need to navigate to that Task checkpoint
 
-The robot is expected to clear the Task Checkpoints in a fixed order.
+The robot is expected to clear the Task Checkpoints in a fixed order. And *must* go to the Detour Checkpoints
+if the ReportingService instructs the robot to do so.
 Eventually the robot should reach the end goal destination following the given series of checkpoints.
 
 .. figure:: _static/img/finals/example_maze.png
@@ -59,13 +60,25 @@ Eventually the robot should reach the end goal destination following the given s
 
 Task checkpoint details - What to expect ? 
 -------------------------------------------
+
+At the start of a run, you will be passed two different image files to re-id, one corresponding to a 
+"suspect plushie" and one corresponding to a "hostage plushie".
+
+During the run, the robot will have to communicate its findings/results to the "HQ" via the ReportingService API and it tracks its position in
+an arena through a "GPS system" AKA LocalizationService API. Please understand usage of these service APIs here: :ref:`apis`.
+
+Prior to navigating to a Task Checkpoint the ReportingService would already provide a target Pose
+for your robot to move to.
+
 Each Task checkpoint will contain a workflow of three AI tasks:
 
     a. Object Re-identification AKA "Friend or Foe (Visual)"
-        i. Visually scan surroundings with robot-mounted camera
-        ii. Identify if the scene contains a plushie corresponding to the 'suspect' image or 'hostage' image given to you at the start of the robot's run. 
-        iii. Submit answer(“suspect”/”hostage”/None) through the reporting service API
-        iv. Server will return 2 audio files (zipped in one folder) to be used in the next task, "Friend or Foe (Audio)"
+        i. Ensure robot is at the right coordinates and is facing the target heading (direction) given in the target Pose (x, y, heading) of this Checkpoint.
+        ii. Make robot take a picture.
+        iii. You will have to compare the 'suspect' and 'hostage' files (given at the start of the run) against the Robot's camera capture, 
+             to ascertain if they are present in the scene. 
+        iv. Submit answer(“suspect”/”hostage”/None) through the reporting service API
+        v. Server will return 2 audio files (zipped in one folder) to be used in the next task, "Friend or Foe (Audio)"
     b. Speaker Identification AKA "Friend or Foe (Audio)"
         i. From the 2 audio files received from the end of "Friend or Foe (Visual)" identify which audio file belongs to which *opponent team member*
         ii. Submit the answer (in the format given - see SpeakerID)  to the scoring server 
@@ -76,6 +89,7 @@ Each Task checkpoint will contain a workflow of three AI tasks:
         ii. Submit the answer as a tuple (e.g. (1,2) ) through the reporting service API
         iii. If your submitted sequence of digits are correct, the next Task checkpoint will be given. Else the next Detour checkpoint coordinates will be given. 
 
+For a code sample of this workflow see "stubs/autonomy_starter.py" script in the Finals code repo `<https://github.com/til-23/til-23-finals-public>`_.
 
 .. figure:: _static/img/finals/robot_workflow.jpg
    :alt: Workflow at Task checkpoint
@@ -83,12 +97,6 @@ Each Task checkpoint will contain a workflow of three AI tasks:
 
    Flowchart of robot tasks at each Task checkpoint.
 
-
-Things to Note
---------------
-
-- The robot will have to communicate its findings/results to the "HQ" via the ReportingService API and it tracks its position in
-  an arena through a "GPS system" AKA LocalizationService API. Please understand usage of these service APIs here: :ref:`apis`.
 
 Differences between Novice and Advanced 
 ---------------------------------------
