@@ -64,16 +64,17 @@ Each Task checkpoint will contain a workflow of three AI tasks:
     a. Object Re-identification AKA "Friend or Foe (Visual)"
         i. Visually scan surroundings with robot-mounted camera
         ii. Identify if the scene contains a plushie corresponding to the 'suspect' image or 'hostage' image given to you at the start of the robot's run. 
-        iii. Submit answer(“suspect”/”hostage”/None) through the scoring service API
+        iii. Submit answer(“suspect”/”hostage”/None) through the reporting service API
         iv. Server will return 2 audio files (zipped in one folder) to be used in the next task, "Friend or Foe (Audio)"
     b. Speaker Identification AKA "Friend or Foe (Audio)"
         i. From the 2 audio files received from the end of "Friend or Foe (Visual)" identify which audio file belongs to which *opponent team member*
         ii. Submit the answer (in the format given - see SpeakerID)  to the scoring server 
         iii. Server will return N audio files to be used in the next task, "Decoding Digits"
     c. Automatic Speech Recognition AKA "Decoding Digits"
-        i. From the N audio files received at the end of Friend or Foe (Audio), identify N digits from these audio files, in the given order. 
-        ii. Submit the answer as a tuple (e.g. (1,2) ) to the scoring server 
-        iii. If your submitted sequence of digits are correct, the next Task checkpoint will be given. Else the next Detour checkpoint will be given. 
+        i. From the N audio files received at the end of Friend or Foe (Audio), identify N digits from these audio files, in the lexicographically ascending 
+           order of the audio filenames, e.g. 'audio1.wav', then 'audio2.wav', then 'audio3.wav' etc. 
+        ii. Submit the answer as a tuple (e.g. (1,2) ) through the reporting service API
+        iii. If your submitted sequence of digits are correct, the next Task checkpoint will be given. Else the next Detour checkpoint coordinates will be given. 
 
 
 .. figure:: _static/img/finals/robot_workflow.jpg
