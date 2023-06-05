@@ -5,7 +5,7 @@ Provided API Services
 
 To get started with the finals challenge, you will need to clone and install the python code 
 given in this repo: 
-`finals challenge github repo <github.com/til-23/til-23-finals>`_.
+`finals challenge github repo <https://github.com/til-23/til-23-finals-public>`_.
 
 During the live robotics run, important services can be accessed via APIs through the ``tilsdk`` package.
 The robot will have to communicate its findings/results to a remote “HQ” via the ReportingService API and it 
