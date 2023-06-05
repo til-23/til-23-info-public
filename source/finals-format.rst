@@ -37,6 +37,22 @@ To win a match, your team must have a higher maze score than the current match's
 If the maze score is tied, then the shorter maze timing wins. Else it's a draw.
 
 
+Rules for the Finals
+####################
+
+**Plushie ReID (Friend or Foe - Visual):** 
+  1. Usage of robots to take pics of plushies is allowed, but do note that the familiarisation venue is not 
+     the same as the finals venue. Images not released by the TIL committee and plushies not seen at the familiarisation
+     venue are not allowed in training/fine-tuning data. 
+  2. Do not bring your own plushies to the familiarisation or final venue.
+
+**Speaker Identification (Friend or Foe - Audio) and ASR (Decoding Digits)**
+  1. Not allowed to record your own external datasets. Similar to qualifiers, we will audit/verify the code during finals.
+
+**Robotics:**
+  1. Must use reporting service and localization apis that are provided.
+
+
 Competition Schedule
 ####################
 

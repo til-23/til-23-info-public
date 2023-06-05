@@ -12,11 +12,11 @@ Robots will need to clear Tasks using
 - **Speech Recognition models** (also based on the qualifiers)
 - **Speaker Identification models** (*new* in the Finals).
 
-.. figure:: _static/img/finals/TIL2022_arena.jpg
+.. figure:: _static/img/finals/FamiliarisationArenaPhoto.jpeg
     :align: center
-    :width: 700px 
+    :width: 500px 
     
-    BrainHack Today-I-Learned AI robot arena in 2022.
+    BrainHack Today-I-Learned AI 2023 Robotics Familiarisation Arena.
 
 The robot you will use in this challenge is the `DJI Robomaster EP 
 <https://www.dji.com/sg/robomaster-ep>`_. So in addition to the TIL2023 SDK that we provide, you will need to 
