@@ -3,11 +3,8 @@
 Simulation & Testing
 ~~~~~~~~~~~~~~~~~~~~
 
-.. todo::
-    This page is still under construction.
-
 A basic simulator (started with the ``til-simulator`` command) is available after installing 
-our provided challenge repository found at `finals challenge github repo <github.com/til-23/til-23-finals>`_.
+our provided challenge repository found at `the Finals challenge repo <https://github.com/til-23/til-23-finals-public>`_.
 The simulator provides a virtual arena for a virtual robot to interact with, should you not have
 access to a physical robot and arena. 
 
