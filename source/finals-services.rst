@@ -66,10 +66,12 @@ Field name              Type      Units  Remarks
 .get_map()
 ----------
 
-The get_map() method provides a static map of the arena as an image. The image represents
-an occupancy grid, where **non-occupied** (i.e. passable) cells are **black** and occupied
-(i.e. non-passable) cells are white. This map does not change throughout a run, so it only 
-needs to be retrieved once.
+The get_map() method provides a grid-based map representation.
+
+Grid elements are square and represented by a float. Value indicates distance from nearest obstacle. Value <= 0 indicates occupied, > 0 indicates passable.
+Grid is centered-aligned, i.e. real-world postion maps to center of grid square.
+
+This map does not change throughout a run, so it only needs to be retrieved once.
 
 .. tip:: 
     To use the SDK to get the map, see :py:meth:`tilsdk.localization.LocalizationService.get_map`.
