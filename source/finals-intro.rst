@@ -125,11 +125,13 @@ Speaker Identification
 Overview
 ---------
 
-The Speaker Identification component of the Finals is where teams must train a model to recognize the identity of a speaker in an audio file. The goal is to identify which audio file belongs to your own team and the opposing team.
+The Speaker Identification component of the Finals is where teams must train a model to recognize the identity of 
+a speaker in an audio file.
 
-The dataset provided includes 15s audio clips recorded during the Robotics Testing period. To evaluate the model's performance during training, 5 random clips from other teams will be given. During the "Friend or Foe (Audio)" Task, teams will 
-receive two anonymous audio clips: their own team member's and their opponent's. 
-Maze points will be awarded based on the model's ability to correctly **identify their opponent's** audio clip.
+The dataset provided includes 15s audio clips recorded during the Robotics Testing period. To evaluate the model's 
+performance during training, 5 random clips from other teams will be given. During the "Friend or Foe (Audio)" Task, teams will 
+receive two anonymous audio clips: one from their own team, and another from the opponet's team. 
+Maze points will be awarded based on the model's ability to correctly **identify the opponet's clip and their opponent's speaker**.
 
 File Format of the Dataset (**Novice**)
 ---------------------------------------
@@ -141,17 +143,17 @@ The folder containing all participants' audio clips will be in the following for
 
 .. code-block:: none
 
-   TeamA_Member1_train.wav
-   TeamA_Member2_train.wav
-   TeamB_Member1_train.wav
+   TeamA_MemberA_train.wav
+   TeamA_MemberB_train.wav
+   TeamB_MemberA_train.wav
 
 **Evaluation Set:**
 
 .. code-block:: none
 
-   TeamA_Member1_ev.wav
-   TeamA_Member2_ev.wav
-   TeamB_Member1_ev.wav
+   TeamA_MemberA_ev.wav
+   TeamA_MemberB_ev.wav
+   TeamB_MemberA_ev.wav
 
 File Format of the Dataset (**Advanced**)
 -----------------------------------------
@@ -162,17 +164,17 @@ Training Set
 
 .. code-block:: none
 
-   TeamA_Member1_train.wav
-   TeamA_Member2_train.wav
-   TeamB_Member1_train.wav
+   TeamA_MemberA_train.wav
+   TeamA_MemberB_train.wav
+   TeamB_MemberA_train.wav
 
 Evaluation Set
 
 .. code-block:: none
 
-   TeamA_Member1_ev.wav
-   TeamA_Member2_ev.wav
-   TeamB_Member1_ev.wav
+   TeamA_MemberA_ev.wav
+   TeamA_MemberB_ev.wav
+   TeamB_MemberA_ev.wav
 
 Submitting Answers For the Friend or Foe (Audio) Task
 -----------------------------------------------------
@@ -181,14 +183,9 @@ During the Friend or Foe (Audio) task, teams will receive two anonymous audio fi
 API: "audio1.wav" and "audio2.wav". 
 One of the audio files will be a recording from a **team member**, while the other audio file will 
 be a recording from a member of your **opponent team** in your *current* match-up. Teams should process these audios
-through their speaker ID model, and submit their answer through the scoring server API in this format:
+through their speaker ID model, and submit their answer through the ReportingService API in this format:
 ``{audio filename without extension}_{team name}_{member number}`` (e.g. ``"audio1_OpponentTeamName_Member1"``).
-
-Rules
------
-
-- There are no restrictions on the usage of models and deep learning techniques, such as probabilistic, supervised, semi-supervised, 
-  or self-supervised methods, including the loading of pretrained models.
+Build the til-23-finals-public documentation to see the ReportingService API formats.
 
 
 Pre-Final Development and Testing

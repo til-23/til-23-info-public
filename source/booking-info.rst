@@ -37,10 +37,13 @@ Things to Note
 Voice Recording
 ###############
 
-Each participant in each team must record 5 audio clips. These will be anonymized and used for the Speaker Identification and ASR challenge in the finals.
+4 representatives per team must record 5 audio clips each. These will be anonymized and used for the Speaker Identification and ASR challenge in the finals.
 Note that all members MUST be present for Session 1 in their allocated slot so as to record the required audio clips.
 
-In the event that some members are unable to make it down during Session 1, they will be required to complete the recording by Session 2. The dataset will be released on Sunday, 11 June 12pm, after Session 1 for teams to start developing and training models. However, do note that it might be the incomplete dataset as some members have not done the recording. The complete dataset will be disseminated at a later date when all participants completed the recording process.
+In the event that some members are unable to make it down during Session 1, DSTA staff will represent the missing members. 
+The dataset is targeted for release on Sunday, 11 June 12pm, after Session 1 for teams to start developing and training models. 
+However, do note that it might be the incomplete dataset as some members have not done the recording. 
+The complete dataset will be disseminated at a later date when all participants completed the recording process.
 
 Audio for Speaker ID
 --------------------
@@ -57,7 +60,7 @@ voice frequency, not the exact words.
 Audio for Decoding Digits
 -------------------------
 
-10 sentences containing containing the digits 0-9 will be provided. Each team member will record 2 
+10 sentences containing containing the digits 0-9 will be provided. Each team will record a total of 10
 clips, each containing 1 unique digit. No white noise will be added to these clips.
 
 
