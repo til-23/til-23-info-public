@@ -1,30 +1,37 @@
 Installing dependencies in an offline environment
 =================================================
 
-Should the need arise to install your python dependencies in an offline environment,
-follow this tutorial to download your python dependencies into a thumbdrive,
-and reinstall the libaries in a new virtual environment via the thumbdrive.
+You will need to be able to install your python dependencies in an offline environment,
+To do this, you will have to first download your dependencies into a portable format.
+Follow this tutorial to download your python dependencies into a thumbdrive,
+and reinstall the libaries in an offline virtual environment via the thumbdrive.
 
 Saving your dependencies as wheel files
 ---------------------------------------
 
 Assumptions:
 
-- you are in an internet-enabled environment
+First ensure you are in an internet-enabled environment.
 
-**Download all pypi-indexed third-party python dependencies for your code**
+**Download your third-party python dependencies from the PyPi package index**
+
+Download wheel files into the flash drive.
 
 .. code-block:: shell
 
     pip download -r path/to/requirements.txt -d /path/to/downloaded/packages  
-    # download all third-party dependencies (wheel files) 
+    # Download all third-party dependencies (wheel files) 
     # into a destination folder of your choice.
 
-To generate a requirements.txt file, you can run ``pip freeze > requirements.txt``.
-But note that if the til-23-finals package is already installed in ur venv, you will have to 
-remove it from the requirements.txt file before you attempt the above ``pip download``. 
-This is because til-23-finals package doesn't exist
-in that internet repository - it comes from our custom challenge repo.
+To generate a requirements.txt file, you may run ``pip freeze > requirements.txt``.
+But note that if the til-23-finals package is already installed in ur python virtual
+environment, you will have to remove it from the requirements.txt file before you 
+attempt the ``pip download``. This is because til-23-finals package doesn't exist
+on the pypi index - it comes from our custom challenge github repo.
+
+**Transfer your finalized folder of wheel files to a portable drive**
+
+Copy-paste whole folder of downloaded packages (wheel files) into a portable drive, e.g. a flash drive.
 
 
 **(OPTIONAL) Make wheel file for the TIL2023 software development kit from the til-23-finals repo**
@@ -40,17 +47,12 @@ is the til-23-finals repo root. Then run..
     python setup.py bdist_wheel --universal
     # This creates the wheel from the setup.py of the current python project.
 
-**(OPTIONAL) Transfer til-23-finals wheel file to dest folder**
-
-Copy-paste wheel file generated from prev step into target folder of python wheel files.
-
-**Transfer your finalized folder of wheel files to a portable drive**
-
-Copy-paste whole folder of downloaded packages (wheel files) into a portable drive, e.g. a flash drive.
+Next, copy-paste wheel file generated from prev step into a folder of ur choice (e.g.
+in the flash drive)
 
 
-Installing from offline packages 
---------------------------------
+Installing python packages from offline wheel files 
+---------------------------------------------------
 
 Now let's install into a *new* virtual environment from the dependency files stored in the portable drive.
 
@@ -63,12 +65,14 @@ Assumptions:
 .. code-block:: shell
 
     pip install --no-index --find-links="/path/to/downloaded/packages" -r requirements.txt
+    # This ignores the pypi index and looks for wheels found in the directory pointed to by--find-links
 
 **Install til-23-finals software development kit while offline**
 
 .. code-block:: shell
 
     pip install --no-index --find-links="/path/to/downloaded/packages" til-23-finals
+    # Install the til-23-finals package from a folder containing the corresponding wheel.
 
 **Test that the installation of the til-23-finals package is succesful by running these commands**
 
@@ -82,4 +86,5 @@ Assumptions:
 
 If the installation of the TIL softwares were successful, you should see the help messages of these commands.
 
-You should now be able to run your autonomy code and AI models in the new virutal environment.
+You should now test that you can run your autonomy code and AI models on the simulator, using this newly
+installed Python virtual environment.
