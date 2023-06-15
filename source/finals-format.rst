@@ -114,23 +114,23 @@ In each "match-up", the teams will flip a coin to see who goes first, "heads" go
      - Team 1
      - vs
      - Team 2
-   * - 0830 
+   * - 0900 
      - A2
      - vs
      - A3
-   * - 0915 
+   * - 0945 
      - B2
      - vs
      - B3
-   * - 1000 
+   * - 1030 
      - A4
      - vs
      - A1
-   * - 1045
+   * - 1115
      - B4
      - vs
      - B1
-   * - 1130
+   * - 1200
      - Lunch
      - 
      - Lunch
@@ -144,27 +144,27 @@ In each "match-up", the teams will flip a coin to see who goes first, "heads" go
      - Arena 1
      - vs
      - Arena 2
-   * - 1230
+   * - 1300
      - Novice-Group A Second Place
      - vs
      - Novice-Group B Second Place
-   * - 1315 
+   * - 1345 
      - Novice-Group A First Place
      - vs
      - Novice-Group B First Place
-   * - 1400 
+   * - 1430 
      - Advanced-Group B Second Place
      - vs
      - Advanced-Group A Second Place
-   * - 1445
+   * - 1515
      - Advanced-Group A First Place
      - vs
      - Advanced-Group B First Place
-   * - 1530
-     - Hard-stop for challenges - participants break, organisers audit code.
+   * - 1600
+     - Organisers audit results.
      -
      -
-   * - 1630
+   * - 1645
      - Seated for award ceremony
      -
      - 
