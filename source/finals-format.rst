@@ -50,13 +50,15 @@ Rules for the Finals
 
 **Robotics:**
   1. Must use ReportingService and LocalizationService APIs that are provided.
+  2. No hardcoding of checkpoints to navigate to. Wayfinding must be based on the coordinates provided by the ReportingService.
 
 
 Competition Schedule
 ####################
 
 The schedule for 21-22 Jun is shown below. This schedule is subject to change.
-In each "match-up", the teams will flip a coin to see who goes first, "heads" goes first.
+In each "match-up", the teams will flip a coin to see who goes first, if "heads" 
+Team 1 goes first, else Team 2 goes first.
 
 
 **Table of Match-ups**
