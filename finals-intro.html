@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction &mdash; TIL2023  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Competition Structure" href="finals-format.html" />
+    <link rel="prev" title="Qualifiers - Leaderboard" href="qualifiers-ranking.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            TIL2023
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Welcome</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Qualifiers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-intro.html">Qualifiers - General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-reid.html">Qualifiers - OD &amp; ReID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-asr.html">Qualifiers - ASR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-ranking.html">Qualifiers - Leaderboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Finals</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-information">General Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-autonomous-robotics-challenge">The Autonomous Robotics Challenge</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-challenge-autonomously-navigating-and-handling-tasks">The Challenge - Autonomously Navigating and Handling Tasks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#task-checkpoint-details-what-to-expect">Task checkpoint details - What to expect ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#differences-between-novice-and-advanced">Differences between Novice and Advanced</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#important-references">Important References</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#speaker-identification">Speaker Identification</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-format-of-the-dataset-novice">File Format of the Dataset (<strong>Novice</strong>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-format-of-the-dataset-advanced">File Format of the Dataset (<strong>Advanced</strong>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#submitting-answers-for-the-friend-or-foe-audio-task">Submitting Answers For the Friend or Foe (Audio) Task</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pre-final-development-and-testing">Pre-Final Development and Testing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#simulation">Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#physical">Physical</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="finals-format.html">Competition Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-services.html">Provided API Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-definitions.html">Definitions for robot localization and movement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-simulator.html">Simulation &amp; Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="offline-dependencies.html">Installing dependencies in an offline environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="booking-info.html">Booking Details</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TIL2023</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Introduction</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/finals-intro.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h1>
+<section id="general-information">
+<h2>General Information<a class="headerlink" href="#general-information" title="Permalink to this heading"></a></h2>
+<p>Teams will need to program a robot to autonomously navigate through a maze and clear checkpoint tasks using AI (like Amazing Race, but for robots!).</p>
+<p>Robots will need to clear Tasks using</p>
+<ul class="simple">
+<li><p><strong>Object Re-identification models</strong> (based on the qualifiers)</p></li>
+<li><p><strong>Speech Recognition models</strong> (also based on the qualifiers)</p></li>
+<li><p><strong>Speaker Identification models</strong> (<em>new</em> in the Finals).</p></li>
+</ul>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/FamiliarisationArenaPhoto.jpeg"><img alt="_images/FamiliarisationArenaPhoto.jpeg" src="_images/FamiliarisationArenaPhoto.jpeg" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-text">BrainHack Today-I-Learned AI 2023 Robotics Familiarisation Arena.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The robot you will use in this challenge is the <a class="reference external" href="https://www.dji.com/sg/robomaster-ep">DJI Robomaster EP</a>. So in addition to the TIL2023 SDK that we provide, you will need to
+refer to the <a class="reference external" href="https://robomaster-dev.readthedocs.io/en/latest/">DJI Robomaster SDK documentation</a> to program the robot to beat our challenge.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/robomaster.jpg"><img alt="_images/robomaster.jpg" src="_images/robomaster.jpg" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">DJI Robomaster EP Infantry Configuration</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="the-autonomous-robotics-challenge">
+<h2>The Autonomous Robotics Challenge<a class="headerlink" href="#the-autonomous-robotics-challenge" title="Permalink to this heading"></a></h2>
+<section id="the-challenge-autonomously-navigating-and-handling-tasks">
+<h3>The Challenge - Autonomously Navigating and Handling Tasks<a class="headerlink" href="#the-challenge-autonomously-navigating-and-handling-tasks" title="Permalink to this heading"></a></h3>
+<p>Teams will need to program a robot to autonomously navigate through a maze while clearing checkpoints tasks using AI.
+The ability of the robot to clear tasks and successfully navigate the maze determines success in this challenge.
+Each robot has up to 10 minutes to complete the maze.</p>
+<p>There are two types of checkpoints in the maze; <strong>Task Checkpoints</strong> and <strong>Detour Checkpoints</strong>.</p>
+<ol class="loweralpha simple">
+<li><p>When your robot arrives at a <strong>Task</strong> checkpoint, the robot will need to complete a series of AI tasks (described below)
+before receiving another checkpoint location to go to</p></li>
+<li><p>When your robot arrives at a <strong>Detour</strong> checkpoint, the robot will automatically receive the coordinates of the next Task checkpoint
+and the robot will need to navigate to that Task checkpoint</p></li>
+</ol>
+<p>The robot is expected to clear the Task Checkpoints in a fixed order. And <em>must</em> go to the Detour Checkpoints
+if the ReportingService instructs the robot to do so.
+Eventually the robot should reach the end goal destination following the given series of checkpoints.</p>
+<figure class="align-center" id="id3">
+<img alt="Example Maze Configuration" src="_images/example_maze.png" />
+<figcaption>
+<p><span class="caption-text">Example schematic layout of the maze</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="task-checkpoint-details-what-to-expect">
+<h3>Task checkpoint details - What to expect ?<a class="headerlink" href="#task-checkpoint-details-what-to-expect" title="Permalink to this heading"></a></h3>
+<p>At the start of a run, you will be passed two different image files to re-id, one corresponding to a
+“suspect plushie” and one corresponding to a “hostage plushie”.</p>
+<p>During the run, the robot will have to communicate its findings/results to the “HQ” via the ReportingService API and it tracks its position in
+an arena through a “GPS system” AKA LocalizationService API. Please understand usage of these service APIs here: <a class="reference internal" href="finals-services.html#apis"><span class="std std-ref">Provided API Services</span></a>.</p>
+<p>Prior to navigating to a Task Checkpoint the ReportingService would already provide a target Pose
+for your robot to move to.</p>
+<p>Each Task checkpoint will contain a workflow of three AI tasks:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><dl class="simple">
+<dt>Object Re-identification AKA “Friend or Foe (Visual)”</dt><dd><ol class="lowerroman simple">
+<li><p>Ensure robot is at the right coordinates and is facing the target heading (direction) given in the target Pose (x, y, heading) of this Checkpoint.</p></li>
+<li><p>Make robot take a picture.</p></li>
+<li><p>You will have to compare the ‘suspect’ and ‘hostage’ files (given at the start of the run) against the Robot’s camera capture,
+to ascertain if they are present in the scene.</p></li>
+<li><p>Submit answer(“suspect”/”hostage”/None) through the reporting service API</p></li>
+<li><p>Server will return 2 audio files (zipped in one folder) to be used in the next task, “Friend or Foe (Audio)”</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Speaker Identification AKA “Friend or Foe (Audio)”</dt><dd><ol class="lowerroman simple">
+<li><p>From the 2 audio files received from the end of “Friend or Foe (Visual)” identify which audio file belongs to which <em>opponent team member</em></p></li>
+<li><p>Submit the answer (in the format given - see SpeakerID)  to the scoring server</p></li>
+<li><p>Server will return N audio files to be used in the next task, “Decoding Digits”</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Automatic Speech Recognition AKA “Decoding Digits”</dt><dd><ol class="lowerroman simple">
+<li><p>From the N audio files received at the end of Friend or Foe (Audio), identify N digits from these audio files, in the lexicographically ascending
+order of the audio filenames, e.g. ‘audio1.wav’, then ‘audio2.wav’, then ‘audio3.wav’ etc.</p></li>
+<li><p>Submit the answer as a tuple (e.g. (1,2) ) through the reporting service API</p></li>
+<li><p>If your submitted sequence of digits are correct, the next Task checkpoint will be given. Else the next Detour checkpoint coordinates will be given.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+</ol>
+</div></blockquote>
+<p>For a code sample of this workflow see “stubs/autonomy_starter.py” script in the Finals code repo <a class="reference external" href="https://github.com/til-23/til-23-finals-public">https://github.com/til-23/til-23-finals-public</a>.</p>
+<figure class="align-center" id="id4">
+<img alt="Workflow at Task checkpoint" src="_images/robot_workflow.jpg" />
+<figcaption>
+<p><span class="caption-text">Flowchart of robot tasks at each Task checkpoint.</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="differences-between-novice-and-advanced">
+<h3>Differences between Novice and Advanced<a class="headerlink" href="#differences-between-novice-and-advanced" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Advanced tier will have more plushies in the scene for the ReID task</p></li>
+<li><p>Advanced tier will have longer passwords to decode for the Decoding Digits task</p></li>
+<li><p>Advanced tier will use noisier audio data in the SpeakerID task</p></li>
+<li><p>Advanced tier will have more checkpoints to clear</p></li>
+</ul>
+</section>
+<section id="important-references">
+<h3>Important References<a class="headerlink" href="#important-references" title="Permalink to this heading"></a></h3>
+<p>You have the following references to aid you:</p>
+<ol class="arabic simple">
+<li><p>Robomaster SDK (See <a class="reference external" href="https://robomaster-dev.readthedocs.io/en/latest/python_sdk/modules.html">RoboMaster APIs</a>)</p></li>
+<li><p>Intro to the TIL-AI Reporting Service</p></li>
+<li><p>Intro to the TIL-AI Localization Service</p></li>
+<li><p>Provided training materials on Robotics</p></li>
+<li><p>Challenge repository in which source codes for the TIL SDK, scoring server and simulator can be found</p></li>
+</ol>
+</section>
+</section>
+<section id="speaker-identification">
+<h2>Speaker Identification<a class="headerlink" href="#speaker-identification" title="Permalink to this heading"></a></h2>
+<section id="overview">
+<h3>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h3>
+<p>The Speaker Identification component of the Finals is where teams must train a model to recognize the identity of
+a speaker in an audio file.</p>
+<p>The dataset provided includes 15s audio clips recorded during the Robotics Testing period. To evaluate the model’s
+performance during training, 5 random clips from other teams will be given. During the “Friend or Foe (Audio)” Task, teams will
+receive two anonymous audio clips: one from their own team, and another from the opponet’s team.
+Maze points will be awarded based on the model’s ability to correctly <strong>identify the opponet’s clip and their opponent’s speaker</strong>.</p>
+</section>
+<section id="file-format-of-the-dataset-novice">
+<h3>File Format of the Dataset (<strong>Novice</strong>)<a class="headerlink" href="#file-format-of-the-dataset-novice" title="Permalink to this heading"></a></h3>
+<p>For the training and evaluation dataset, audio clips will be provided in .wav format, mono, with a sampling rate of 16,000 Hz.
+The folder containing all participants’ audio clips will be in the following format:</p>
+<p><strong>Training Set:</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>TeamA_MemberA_train.wav
+TeamA_MemberB_train.wav
+TeamB_MemberA_train.wav
+</pre></div>
+</div>
+<p><strong>Evaluation Set:</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>TeamA_MemberA_ev.wav
+TeamA_MemberB_ev.wav
+TeamB_MemberA_ev.wav
+</pre></div>
+</div>
+</section>
+<section id="file-format-of-the-dataset-advanced">
+<h3>File Format of the Dataset (<strong>Advanced</strong>)<a class="headerlink" href="#file-format-of-the-dataset-advanced" title="Permalink to this heading"></a></h3>
+<p>Audio clips will be given in .wav format, <em>overlaid with background noises</em>, with a sampling rate of 16,000 Hz. The folder containing all participants’ audio clips will be in the following format:</p>
+<p>Training Set</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>TeamA_MemberA_train.wav
+TeamA_MemberB_train.wav
+TeamB_MemberA_train.wav
+</pre></div>
+</div>
+<p>Evaluation Set</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>TeamA_MemberA_ev.wav
+TeamA_MemberB_ev.wav
+TeamB_MemberA_ev.wav
+</pre></div>
+</div>
+</section>
+<section id="submitting-answers-for-the-friend-or-foe-audio-task">
+<h3>Submitting Answers For the Friend or Foe (Audio) Task<a class="headerlink" href="#submitting-answers-for-the-friend-or-foe-audio-task" title="Permalink to this heading"></a></h3>
+<p>During the Friend or Foe (Audio) task, teams will receive two anonymous audio files via the Reporting Service
+API: “audio1.wav” and “audio2.wav”.
+One of the audio files will be a recording from a <strong>team member</strong>, while the other audio file will
+be a recording from a member of your <strong>opponent team</strong> in your <em>current</em> match-up. Teams should process these audios
+through their speaker ID model, and submit their answer through the ReportingService API in this format:
+<code class="docutils literal notranslate"><span class="pre">{audio</span> <span class="pre">filename</span> <span class="pre">without</span> <span class="pre">extension}_{team</span> <span class="pre">name}_{member</span> <span class="pre">number}</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">&quot;audio1_OpponentTeamName_Member1&quot;</span></code>).
+Build the til-23-finals-public documentation to see the ReportingService API formats.</p>
+</section>
+</section>
+<section id="pre-final-development-and-testing">
+<h2>Pre-Final Development and Testing<a class="headerlink" href="#pre-final-development-and-testing" title="Permalink to this heading"></a></h2>
+<section id="simulation">
+<h3>Simulation<a class="headerlink" href="#simulation" title="Permalink to this heading"></a></h3>
+<p>Teams may not have access to physical robots and arenas at all times while preparing for the competition.
+Participants will be provided with a python-based software simulator and mock robot SDK which
+they can use to develop and test their robotics code. See <a class="reference internal" href="finals-simulator.html#simulation"><span class="std std-ref">Simulation &amp; Testing</span></a>.</p>
+</section>
+<section id="physical">
+<h3>Physical<a class="headerlink" href="#physical" title="Permalink to this heading"></a></h3>
+<p>Each team will be able to test their robotics code in a physical environment during the
+familiarisation period which runs from 8 Jun 2023 - 16 Jun 2023.</p>
+<p>To ensure equal opportunity to interact with the robots, teams can book 1 <em>slot</em> in each of the following <em>sessions</em>.</p>
+<ul class="simple">
+<li><p>Session 1: 8th June - 9th June (<strong>Mandatory</strong>)</p></li>
+<li><p>Session 2: 12th June - 13th June</p></li>
+<li><p>Session 3: 14th June - 15th June</p></li>
+</ul>
+<p>Each session has two possible slots:</p>
+<ul class="simple">
+<li><p>AM slot : 9am - 12.30pm</p></li>
+<li><p>PM slot : 2pm - 5.30pm</p></li>
+</ul>
+<p>Refer to <a class="reference internal" href="booking-info.html#booking-info"><span class="std std-ref">Booking Details</span></a> on the booking process.</p>
+<p>NOTE: During your team’s alloted slot in Session 1 (8-9 June), teams are required to go for a recording session to record their
+voices which will form an anonymized training and finetuning dataset for the final’s speaker identification and speech recognition tasks.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="qualifiers-ranking.html" class="btn btn-neutral float-left" title="Qualifiers - Leaderboard" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="finals-format.html" class="btn btn-neutral float-right" title="Competition Structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Digital Hub, Defence Science and Technology Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

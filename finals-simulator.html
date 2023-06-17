@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulation &amp; Testing &mdash; TIL2023  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installing dependencies in an offline environment" href="offline-dependencies.html" />
+    <link rel="prev" title="Definitions for robot localization and movement" href="finals-definitions.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            TIL2023
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Welcome</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Qualifiers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-intro.html">Qualifiers - General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-reid.html">Qualifiers - OD &amp; ReID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-asr.html">Qualifiers - ASR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-ranking.html">Qualifiers - Leaderboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Finals</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="finals-intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-format.html">Competition Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-services.html">Provided API Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-definitions.html">Definitions for robot localization and movement</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Simulation &amp; Testing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#simulation-setup">Simulation Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#virtual-robomaster">Virtual RoboMaster</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-simulator">Using the Simulator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuring-the-simulator">Configuring the Simulator</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-simulator-usage">Advanced simulator usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="offline-dependencies.html">Installing dependencies in an offline environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="booking-info.html">Booking Details</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TIL2023</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Simulation &amp; Testing</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/finals-simulator.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="simulation-testing">
+<span id="simulation"></span><h1>Simulation &amp; Testing<a class="headerlink" href="#simulation-testing" title="Permalink to this heading"></a></h1>
+<p>A basic simulator (started with the <code class="docutils literal notranslate"><span class="pre">til-simulator</span></code> command) is available after installing
+our provided challenge repository found at <a class="reference external" href="https://github.com/til-23/til-23-finals-public">the Finals challenge repo</a>.
+The simulator provides a virtual arena for a virtual robot to interact with, should you not have
+access to a physical robot and arena.</p>
+<p>You are encouraged to design various test environments and test extensively in simulation as access to
+the physical arena and robots prior to the actual challenge day will be limited.</p>
+<section id="simulation-setup">
+<h2>Simulation Setup<a class="headerlink" href="#simulation-setup" title="Permalink to this heading"></a></h2>
+<figure class="align-center" id="id1">
+<img alt="System Architecture for Simulated Setup" src="_images/SystemArchitecture-Simulated.png" />
+<figcaption>
+<p><span class="caption-text">System Architecture (Simulated Setup). Note that the Reporting Server
+and Simulator can be run on the same machine as the autonomy client/code.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="virtual-robomaster">
+<span id="mocks"></span><h2>Virtual RoboMaster<a class="headerlink" href="#virtual-robomaster" title="Permalink to this heading"></a></h2>
+<p>In <code class="docutils literal notranslate"><span class="pre">tilsdk.mock_robomaster</span></code> we provide a drop-in simulated replacement of the Robomaster SDK.
+This mock robomaster module is designed to interact with the simulated arena (til-simulator).
+Use these together to test your robot’s behaviour in various arena configurations.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To use a mock, simply replace the import statement of the target module with
+the equivalent mock import. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Comment out the actual import</span>
+<span class="c1">#from robomaster.robot import Robot</span>
+
+<span class="c1"># Replace with mock import</span>
+<span class="kn">from</span> <span class="nn">tilsdk.mock_robomaster.robot</span> <span class="kn">import</span> <span class="n">Robot</span>
+
+<span class="n">robot</span> <span class="o">=</span> <span class="n">Robot</span><span class="p">()</span>
+<span class="n">robot</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">conn_type</span><span class="o">=</span><span class="s2">&quot;ap&quot;</span><span class="p">)</span>
+<span class="n">robot</span><span class="o">.</span><span class="n">set_robot_mode</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">&quot;chassis_lead&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Note that the mock Robot does not provide or implement all the interfaces of the real robot.
+We only provide some functionality to simulate robot movement through the <code class="docutils literal notranslate"><span class="pre">chassis</span></code> module, and
+some functionality to simulate taking a picture through the <code class="docutils literal notranslate"><span class="pre">camera</span></code> module.</p>
+<section id="using-the-simulator">
+<h3>Using the Simulator<a class="headerlink" href="#using-the-simulator" title="Permalink to this heading"></a></h3>
+<p>The simulator simulates the robot movement and provides a visualization of the
+robot’s behaviour within a simulated arena layout.</p>
+<p>In addition, the simulator exposes a simulated localization server (that mimics the interface of the real
+localization server) such that your code can query it for the coordinates of the virtual robot.</p>
+<p>The simulator accepts configuration options
+(see <a class="reference internal" href="#simulator-configuration">simulator-configuration</a>).</p>
+<p>Example command to run simulator:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>til-simulator<span class="w"> </span>-c<span class="w"> </span>config/sim_cfg.yml
+</pre></div>
+</div>
+<p>If successful, you should see something like this:</p>
+<figure class="align-center" id="id2">
+<img alt="Example of simulator server running and its visualisation." src="_images/SimulatorExample.png" />
+<figcaption>
+<p><span class="caption-text">Example of simulator server running and its visualisation.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">til-simulator</span></code> sets up HTTP endpoints. When running the simulator locally
+on your development machine, your default machine configuration may prevent the
+simulator from communicating with your autonomy code.</p>
+<p>If you face trouble with running the simulation, check that</p>
+<ol class="arabic simple">
+<li><p>Your loopback adpater is enabled (on Windows)</p></li>
+<li><p>Your firewall settings are not blocking traffic to the simulator.</p></li>
+</ol>
+<p>You can also change the host and port used by the simulator by providing it in a
+config file or via command line options (see <a class="reference internal" href="#simulator-configuration">simulator-configuration</a>).</p>
+</div>
+<p>Ensure that the scoring server (<code class="docutils literal notranslate"><span class="pre">til-scoring</span></code> command) and the simulator (<code class="docutils literal notranslate"><span class="pre">til-simulator</span></code> command)
+are running before your autonomy code attempts to connect to these services through the ReportingService API
+and LocalizationService API. You will also need to make sure that you are using the <code class="docutils literal notranslate"><span class="pre">tilsdk.mock_robomaster.robot.Robot</span></code>
+class instead of the real Robomaster SDK’s Robot class to control the simulated robot.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The map images and simulator visuals are flipped in the vertical axis compared to the axes of
+the actual arena. i.e. positive-y is down-facing in the map image files and simulator, while
+positive-y is up-facing in the physical arena, relative to the origin (0,0).</p>
+</div>
+</section>
+<section id="configuring-the-simulator">
+<span id="simulator-configuration"></span><h3>Configuring the Simulator<a class="headerlink" href="#configuring-the-simulator" title="Permalink to this heading"></a></h3>
+<p>Available command line options for the simulator can be viewed by running <code class="docutils literal notranslate"><span class="pre">til-simulator</span> <span class="pre">--help</span></code>.
+The simulator also accepts a YAML config file. A sample config is provided in <code class="docutils literal notranslate"><span class="pre">config/sim_cfg.yml</span></code>.</p>
+<p>You may use different maps with the simulator. Maps should be provided as black
+and white images in PNG format. Free grid positions should be marked black and
+obstacle positions should be marked white. Be sure to specify the <code class="docutils literal notranslate"><span class="pre">--map_scale</span></code> used.
+By default, a <code class="docutils literal notranslate"><span class="pre">--map_scale</span></code> of 0.01 means 1 image pixel-width corresponds to 0.01 metres in real life.</p>
+</section>
+</section>
+<section id="advanced-simulator-usage">
+<h2>Advanced simulator usage<a class="headerlink" href="#advanced-simulator-usage" title="Permalink to this heading"></a></h2>
+<p>The simulator can also be configured to provide a passthrough proxy of an <em>actual</em>
+localization server. This enables you to test with the physical robot and real
+localization server while visualizing the robot on the simulation render.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="finals-definitions.html" class="btn btn-neutral float-left" title="Definitions for robot localization and movement" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="offline-dependencies.html" class="btn btn-neutral float-right" title="Installing dependencies in an offline environment" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Digital Hub, Defence Science and Technology Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Competition Structure &mdash; TIL2023  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Provided API Services" href="finals-services.html" />
+    <link rel="prev" title="Introduction" href="finals-intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            TIL2023
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Welcome</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Qualifiers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-intro.html">Qualifiers - General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-reid.html">Qualifiers - OD &amp; ReID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-asr.html">Qualifiers - ASR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-ranking.html">Qualifiers - Leaderboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Finals</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="finals-intro.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Competition Structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#competition-format">Competition Format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#winning-a-match">Winning a Match</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rules-for-the-finals">Rules for the Finals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#competition-schedule">Competition Schedule</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="finals-services.html">Provided API Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-definitions.html">Definitions for robot localization and movement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-simulator.html">Simulation &amp; Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="offline-dependencies.html">Installing dependencies in an offline environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="booking-info.html">Booking Details</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TIL2023</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Competition Structure</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/finals-format.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="competition-structure">
+<h1>Competition Structure<a class="headerlink" href="#competition-structure" title="Permalink to this heading"></a></h1>
+<section id="competition-format">
+<h2>Competition Format<a class="headerlink" href="#competition-format" title="Permalink to this heading"></a></h2>
+<p>Novice and Advanced tier will compete <em>separately</em> from each other, i.e. Novice-tier participants compete against Novice-tier,
+Advanced-tier participants complete against Advanced-tier participants.</p>
+<p>In each competition tier, teams will be randomly split into 2 groups (A and B) to participate in the
+<strong>round-robin group stage</strong>.</p>
+<p>During the group stage, each team will play a match against every other team in its group. Winning a
+match yields 3 match points, drawing yields 1 match point, and losing yields 0 match points.</p>
+<p>Match points will be tallied and the <strong>highest ranked team</strong> for each group will proceed to the grand
+final, where they will compete for the overall 1st place. The <strong>second highest ranked team</strong> for each group
+will compete for the overall 3rd place.</p>
+<p>Participants will be ranked (and tie-broken) in this priority order:</p>
+<ol class="arabic simple">
+<li><p>total match points (higher better)</p></li>
+<li><p>total maze score (higher better)</p></li>
+<li><p>total maze timing (lower better)</p></li>
+<li><p>if there is still a tie, the tie will be broken with the teams’ ranking in the qualifiers stage.</p></li>
+</ol>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/FinalsLeaderboard.jpeg"><img alt="_images/FinalsLeaderboard.jpeg" src="_images/FinalsLeaderboard.jpeg" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Example scoreboard</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<section id="winning-a-match">
+<h3>Winning a Match<a class="headerlink" href="#winning-a-match" title="Permalink to this heading"></a></h3>
+<p>To win a match, your team must have a higher maze score than the current match’s opponent.
+If the maze score is tied, then the shorter maze timing wins. Else it’s a draw.</p>
+</section>
+</section>
+<section id="rules-for-the-finals">
+<h2>Rules for the Finals<a class="headerlink" href="#rules-for-the-finals" title="Permalink to this heading"></a></h2>
+<dl class="simple">
+<dt><strong>Plushie ReID (Friend or Foe - Visual):</strong></dt><dd><ol class="arabic simple">
+<li><p>Usage of robots to take pics of plushies for finetuning is allowed, but do note that the familiarisation venue is not
+the same as the finals venue. Plushies not seen at the familiarisation venue are not allowed for training/fine-tuning.</p></li>
+<li><p>Do not bring your own plushies to the Familiarisation or Finals venue.</p></li>
+</ol>
+</dd>
+<dt><strong>Speaker Identification (Friend or Foe - Audio) and ASR (Decoding Digits)</strong></dt><dd><ol class="arabic simple">
+<li><p>Not allowed to record your own external datasets. Similar to qualifiers, we will audit/verify your training code during finals.</p></li>
+</ol>
+</dd>
+<dt><strong>Robotics:</strong></dt><dd><ol class="arabic simple">
+<li><p>Must use ReportingService and LocalizationService APIs that are provided.</p></li>
+<li><p>No hardcoding of checkpoints to navigate to. Wayfinding must be based on the coordinates provided by the ReportingService.</p></li>
+</ol>
+</dd>
+</dl>
+</section>
+<section id="competition-schedule">
+<h2>Competition Schedule<a class="headerlink" href="#competition-schedule" title="Permalink to this heading"></a></h2>
+<p>The schedule for 21-22 Jun is shown below. This schedule is subject to change.
+In each “match-up”, the teams will flip a coin to see who goes first, if “heads”
+Team 1 goes first, else Team 2 goes first.</p>
+<p><strong>Table of Match-ups</strong></p>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Day 1 Matchups - Group Stages</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Time</p></th>
+<th class="head"><p>Team 1</p></th>
+<th class="head"><p>vs</p></th>
+<th class="head"><p>Team 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0900</p></td>
+<td><p>A1</p></td>
+<td><p>vs</p></td>
+<td><p>A2</p></td>
+</tr>
+<tr class="row-odd"><td><p>0945</p></td>
+<td><p>B1</p></td>
+<td><p>vs</p></td>
+<td><p>B2</p></td>
+</tr>
+<tr class="row-even"><td><p>1030</p></td>
+<td><p>A3</p></td>
+<td><p>vs</p></td>
+<td><p>A4</p></td>
+</tr>
+<tr class="row-odd"><td><p>1115</p></td>
+<td><p>B3</p></td>
+<td><p>vs</p></td>
+<td><p>B4</p></td>
+</tr>
+<tr class="row-even"><td><p>1200</p></td>
+<td><p>Lunch</p></td>
+<td></td>
+<td><p>Lunch</p></td>
+</tr>
+<tr class="row-odd"><td><p>1330</p></td>
+<td><p>A1</p></td>
+<td><p>vs</p></td>
+<td><p>A3</p></td>
+</tr>
+<tr class="row-even"><td><p>1415</p></td>
+<td><p>B1</p></td>
+<td><p>vs</p></td>
+<td><p>B3</p></td>
+</tr>
+<tr class="row-odd"><td><p>1500</p></td>
+<td><p>A2</p></td>
+<td><p>vs</p></td>
+<td><p>A4</p></td>
+</tr>
+<tr class="row-even"><td><p>1545</p></td>
+<td><p>B2</p></td>
+<td><p>vs</p></td>
+<td><p>B4</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-text">Day 2 Matchups - Group Stages</span><a class="headerlink" href="#id3" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 29%" />
+<col style="width: 14%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Time</p></th>
+<th class="head"><p>Team 1</p></th>
+<th class="head"><p>vs</p></th>
+<th class="head"><p>Team 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0830</p></td>
+<td><p>A2</p></td>
+<td><p>vs</p></td>
+<td><p>A3</p></td>
+</tr>
+<tr class="row-odd"><td><p>0915</p></td>
+<td><p>B2</p></td>
+<td><p>vs</p></td>
+<td><p>B3</p></td>
+</tr>
+<tr class="row-even"><td><p>1000</p></td>
+<td><p>A4</p></td>
+<td><p>vs</p></td>
+<td><p>A1</p></td>
+</tr>
+<tr class="row-odd"><td><p>1045</p></td>
+<td><p>B4</p></td>
+<td><p>vs</p></td>
+<td><p>B1</p></td>
+</tr>
+<tr class="row-even"><td><p>1130</p></td>
+<td><p>Lunch</p></td>
+<td></td>
+<td><p>Lunch</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="id4">
+<caption><span class="caption-text">Day 2 - Grand Finals</span><a class="headerlink" href="#id4" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 40%" />
+<col style="width: 8%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Time</p></th>
+<th class="head"><p>Arena 1</p></th>
+<th class="head"><p>vs</p></th>
+<th class="head"><p>Arena 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1330</p></td>
+<td><p>Novice-Group A’s 2nd Place</p></td>
+<td><p>vs</p></td>
+<td><p>Novice-Group B’s 2nd Place</p></td>
+</tr>
+<tr class="row-odd"><td><p>1400</p></td>
+<td><p>Novice-Group A 1st Place</p></td>
+<td><p>vs</p></td>
+<td><p>Novice-Group B 1st Place</p></td>
+</tr>
+<tr class="row-even"><td><p>1430</p></td>
+<td><p>Advanced-Group B 2nd Place</p></td>
+<td><p>vs</p></td>
+<td><p>Advanced-Group A 2nd Place</p></td>
+</tr>
+<tr class="row-odd"><td><p>1500</p></td>
+<td><p>Advanced-Group A 1st Place</p></td>
+<td><p>vs</p></td>
+<td><p>Advanced-Group B 1st Place</p></td>
+</tr>
+<tr class="row-even"><td><p>1530</p></td>
+<td><p>Organisers audit results.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>1545</p></td>
+<td><p>Seated for award ceremony</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>1600</p></td>
+<td><p>Award Ceremony Begins</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="finals-intro.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="finals-services.html" class="btn btn-neutral float-right" title="Provided API Services" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Digital Hub, Defence Science and Technology Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

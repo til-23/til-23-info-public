@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qualifiers - OD &amp; ReID &mdash; TIL2023  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Qualifiers - ASR" href="qualifiers-asr.html" />
+    <link rel="prev" title="Qualifiers - General" href="qualifiers-intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            TIL2023
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Welcome</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Qualifiers</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-intro.html">Qualifiers - General</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Qualifiers - OD &amp; ReID</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-the-reid-challenge-about">What is the ReID Challenge about?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-image-and-annotation">Example image and annotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#folder-structure">Folder structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#skeleton-code">Skeleton Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#evaluation-how-will-the-reid-challenge-be-evaluated">Evaluation - How will the ReID Challenge be evaluated?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-rules-for-participants">Additional rules for participants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-asr.html">Qualifiers - ASR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-ranking.html">Qualifiers - Leaderboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Finals</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="finals-intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-format.html">Competition Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-services.html">Provided API Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-definitions.html">Definitions for robot localization and movement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-simulator.html">Simulation &amp; Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="offline-dependencies.html">Installing dependencies in an offline environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="booking-info.html">Booking Details</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TIL2023</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Qualifiers - OD &amp; ReID</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/qualifiers-reid.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="qualifiers-od-reid">
+<h1>Qualifiers - OD &amp; ReID<a class="headerlink" href="#qualifiers-od-reid" title="Permalink to this heading"></a></h1>
+<section id="what-is-the-reid-challenge-about">
+<h2>What is the ReID Challenge about?<a class="headerlink" href="#what-is-the-reid-challenge-about" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>The dataset consists of images of plushies. The annotations provided will be the bounding box coordinates for every plushie in the image. Refer to the annotation format for details</p></li>
+<li><dl class="simple">
+<dt>Your task is to train two computer vision models.</dt><dd><ul>
+<li><p>You will develop an object detection model that identifies all plushies in the scene and to use relevant methods to extract these plushies into individual crops to be fed to the ReID.</p></li>
+<li><p>The second model will identify whether a query plushie crop matches a target plushie crop, ie, are both plushies in the different scenes the same one.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>You will be provided a training set for your use. You are allowed to include additional data to train your model, terms &amp; conditions apply (refer to “Important rules for participants” below for more information).</p></li>
+<li><p>A separate test dataset will be released and you are supposed to evaluate your model using this test dataset which <strong>will</strong> be used as a judging criteria for the qualifiers.</p></li>
+</ul>
+</section>
+<section id="example-image-and-annotation">
+<h2>Example image and annotation<a class="headerlink" href="#example-image-and-annotation" title="Permalink to this heading"></a></h2>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/cv_sample.png"><img alt="_images/cv_sample.png" src="_images/cv_sample.png" style="width: 300px;" /></a>
+</figure>
+<p>.txt</p>
+<p>toy1_ID norm_center_x norm_center_y norm_width norm_height</p>
+<p>toy2_ID norm_center_x norm_center_y norm_width norm_height</p>
+<p>…</p>
+<p>Annotations will be provided in yolo format. Refer <a class="reference external" href="https://blog.paperspace.com/train-yolov5-custom-data/#convert-the-annotations-into-the-yolo-v5-format">here</a> for more details:</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/yolo_format_annotation.png"><img alt="_images/yolo_format_annotation.png" src="_images/yolo_format_annotation.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Yolo annotation format</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="folder-structure">
+<h2>Folder structure<a class="headerlink" href="#folder-structure" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Images</dt><dd><ul>
+<li><p>plushie0001.png</p></li>
+<li><p>plushie0002.png</p></li>
+<li><p>plushie0003.png</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Labels</dt><dd><ul>
+<li><p>plushie001.txt</p></li>
+<li><p>plushie002.txt</p></li>
+<li><p>plushie003.txt</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="skeleton-code">
+<h2>Skeleton Code<a class="headerlink" href="#skeleton-code" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>A skeleton code will be given to you, along with the training materials provided.</p></li>
+</ul>
+</section>
+<section id="evaluation-how-will-the-reid-challenge-be-evaluated">
+<h2>Evaluation - How will the ReID Challenge be evaluated?<a class="headerlink" href="#evaluation-how-will-the-reid-challenge-be-evaluated" title="Permalink to this heading"></a></h2>
+<ul>
+<li><p>The challenge will be evaluated using mAP (<a class="reference external" href="https://www.v7labs.com/blog/mean-average-precision">mean average precision</a>) with IOU&#64;0.5, . There will only be two classes - suspect and non suspect. A plushie is classified as a suspect if it matches the query plushie. In the example below, the red elephant is the query. Your object detection model should detect all three plushies and classify the elephant as a suspect (green) and the other plushies as a non suspect (red).</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/reid_task.png"><img alt="_images/reid_task.png" class="align-center" src="_images/reid_task.png" style="width: 300px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Note that the test plushies will be completely unseen to your model, ie, they are different to the plushies from the training dataset.</p></li>
+</ul>
+</section>
+<section id="additional-rules-for-participants">
+<h2>Additional rules for participants<a class="headerlink" href="#additional-rules-for-participants" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>You need not necessarily use the boilerplate code and can write your own model code for the competition. Any form of deep learning techniques are fine i.e supervised, semi-supervised or self-supervised method, including loading of pretraining models.</p></li>
+<li><p>For avoidance of doubt, you may not annotate the images of the test set.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="qualifiers-intro.html" class="btn btn-neutral float-left" title="Qualifiers - General" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="qualifiers-asr.html" class="btn btn-neutral float-right" title="Qualifiers - ASR" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Digital Hub, Defence Science and Technology Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

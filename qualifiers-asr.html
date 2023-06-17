@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qualifiers - ASR &mdash; TIL2023  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Qualifiers - Leaderboard" href="qualifiers-ranking.html" />
+    <link rel="prev" title="Qualifiers - OD &amp; ReID" href="qualifiers-reid.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            TIL2023
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Welcome</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Qualifiers</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-intro.html">Qualifiers - General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-reid.html">Qualifiers - OD &amp; ReID</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Qualifiers - ASR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-the-asr-challenge-about">What is the ASR Challenge about?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-format-of-the-dataset-how-are-the-files-given-to-you">File format of the dataset - How are the files given to you?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#boilerplate-code">Boilerplate Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#evaluation-how-will-the-asr-challenge-be-evaluated">Evaluation - How will the ASR Challenge be evaluated?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#submission-how-to-submit-your-final-evaluation">Submission - How to submit your final evaluation?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-rules-for-participants">Additional rules for participants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="qualifiers-ranking.html">Qualifiers - Leaderboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Finals</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="finals-intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-format.html">Competition Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-services.html">Provided API Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-definitions.html">Definitions for robot localization and movement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finals-simulator.html">Simulation &amp; Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="offline-dependencies.html">Installing dependencies in an offline environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="booking-info.html">Booking Details</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TIL2023</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Qualifiers - ASR</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/qualifiers-asr.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="qualifiers-asr">
+<h1>Qualifiers - ASR<a class="headerlink" href="#qualifiers-asr" title="Permalink to this heading"></a></h1>
+<section id="what-is-the-asr-challenge-about">
+<h2>What is the ASR Challenge about?<a class="headerlink" href="#what-is-the-asr-challenge-about" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>The dataset consists of speech audio clips with utterances of a few seconds per clip and their corresponding transcriptions.</p></li>
+<li><p>The datasets given will <strong>only</strong> be in <strong>English</strong>. Majority of the datasets given are in the intonation of Singapore English.</p></li>
+<li><p>Your task is to train a model to perform <strong>speech recognition</strong> (also known as speech-to-text).</p></li>
+<li><p>You will be provided a training set for your use. You are allowed to include additional data to train your model, terms &amp; conditions apply (refer to “Important rules for participants” below for more information).</p></li>
+<li><p>A separate test dataset will be released and you are supposed to evaluate your model using this test dataset which <strong>will</strong> be used as a judging criteria for the qualifiers.</p></li>
+</ul>
+</section>
+<section id="file-format-of-the-dataset-how-are-the-files-given-to-you">
+<h2>File format of the dataset - How are the files given to you?<a class="headerlink" href="#file-format-of-the-dataset-how-are-the-files-given-to-you" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Training set</dt><dd><ul>
+<li><p>The audio clips will be given in .wav format, mono, with a sampling rate of 16,000 Hz.</p></li>
+<li><p>The given annotations will be in <strong>CAPS</strong> form.</p></li>
+<li><dl class="simple">
+<dt>Only these characters are used in forming the annotations, and you are expected to only produce the transcription using these characters. These characters are:</dt><dd><p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z &lt;SPACE&gt;</p>
+</dd>
+</dl>
+</li>
+<li><p>The annotations will be given in .csv format, with the following structure:</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">Train.csv</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 50%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>path</p></td>
+<td><p>annotation</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>audio/train_00001.wav</p></td>
+<td><p>AUDIO TRANSCRIPTION FOR CLIP ONE</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>audio/train_00002.wav</p></td>
+<td><p>AUDIO TRANSCRIPTION FOR CLIP TWO</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>audio/train_00003.wav</p></td>
+<td><p>AUDIO TRANSCRIPTION FOR CLIP THREE</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>…</p></td>
+<td><p>…</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Interim and Evaluation set</dt><dd><ul>
+<li><p>The audio clips will be given in .wav format, mono, with a sampling rate of 16,000 Hz.</p></li>
+<li><p>If your team is in the advanced tier, the test set audio files will begin with the “evala_” prefix. If your team is in the novice tier, the test set audio files will begin with the “evalb_” prefix.</p></li>
+<li><p>A .csv file containing all the file path of the audio clips will be given with the following structure:</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Test_{Advanced, Novice}.csv</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 67%" />
+<col style="width: 33%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>path</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>audio/eval{a,b}_00001.wav</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>audio/eval{a,b}_00002.wav</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>audio/eval{a,b}_00003.wav</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>…</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="boilerplate-code">
+<h2>Boilerplate Code<a class="headerlink" href="#boilerplate-code" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>An end-to-end boilerplate code will be given to you, together with a code walkthrough video on a <strong>demo dataset</strong>. Please find the code that will be released together with the dataset and the video in the training videos.</p></li>
+</ul>
+</section>
+<section id="evaluation-how-will-the-asr-challenge-be-evaluated">
+<h2>Evaluation - How will the ASR Challenge be evaluated?<a class="headerlink" href="#evaluation-how-will-the-asr-challenge-be-evaluated" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>The ASR challenge will be evaluated with the Word Error Rate (WER) metric. You can read up further on the <a class="reference external" href="https://sonix.ai/articles/word-error-rate">Definition of WER</a>. WER is computed with the following equation below:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># S: Number of substitutions</span>
+<span class="c1"># D: Number of deletions</span>
+<span class="c1"># I: Number of insertions</span>
+<span class="c1"># N: Number of words in the reference</span>
+
+<span class="n">WER</span> <span class="o">=</span> <span class="p">(</span><span class="n">S</span> <span class="o">+</span> <span class="n">D</span> <span class="o">+</span> <span class="n">I</span><span class="p">)</span> <span class="o">/</span> <span class="n">N</span>
+</pre></div>
+</div>
+</section>
+<section id="submission-how-to-submit-your-final-evaluation">
+<h2>Submission - How to submit your final evaluation?<a class="headerlink" href="#submission-how-to-submit-your-final-evaluation" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>The submission format will be the standard CSV format. Please ensure that the submissions are in .csv with format matching the following structure as shown below:</p></li>
+</ul>
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-text">submission.csv</span><a class="headerlink" href="#id3" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 50%" />
+<col style="width: 25%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>path</p></td>
+<td><p>annotation</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>eval{a,b}_00001.wav</p></td>
+<td><p>PREDICTED TRANSCRIPTION FOR FILENAME ONE</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>eval{a,b}_00002.wav</p></td>
+<td><p>PREDICTED TRANSCRIPTION FOR FILENAME TWO</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>eval{a,b}_00003.wav</p></td>
+<td><p>PREDICTED TRANSCRIPTION FOR FILENAME THREE</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>…</p></td>
+<td><p>…</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Take note that the csv file can only have 2 columns, with column header “path” and “annotation”</p></li>
+<li><p>Refer to the boilerplate code to see how the submission file is being generated.</p></li>
+</ul>
+</section>
+<section id="additional-rules-for-participants">
+<h2>Additional rules for participants<a class="headerlink" href="#additional-rules-for-participants" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>You need not necessarily use the boilerplate code and can write your own model code for the competition. Any form of deep learning techniques are fine i.e supervised, semi-supervised or self-supervised method, including loading of pretraining models.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="qualifiers-reid.html" class="btn btn-neutral float-left" title="Qualifiers - OD &amp; ReID" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="qualifiers-ranking.html" class="btn btn-neutral float-right" title="Qualifiers - Leaderboard" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Digital Hub, Defence Science and Technology Agency.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
