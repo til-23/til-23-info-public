@@ -99,11 +99,11 @@ Team 1 goes first, else Team 2 goes first.
      - B1
      - vs
      - B3
-   * - 1530 
+   * - 1500 
      - A2
      - vs
      - A4
-   * - 1615 
+   * - 1545 
      - B2
      - vs
      - B4
@@ -116,23 +116,23 @@ Team 1 goes first, else Team 2 goes first.
      - Team 1
      - vs
      - Team 2
-   * - 0900 
+   * - 0830 
      - A2
      - vs
      - A3
-   * - 0945 
+   * - 0915 
      - B2
      - vs
      - B3
-   * - 1030 
+   * - 1000 
      - A4
      - vs
      - A1
-   * - 1115
+   * - 1045
      - B4
      - vs
      - B1
-   * - 1200
+   * - 1130
      - Lunch
      - 
      - Lunch
@@ -146,31 +146,31 @@ Team 1 goes first, else Team 2 goes first.
      - Arena 1
      - vs
      - Arena 2
-   * - 1300
-     - Novice-Group A Second Place
+   * - 1330
+     - Novice-Group A's 2nd Place
      - vs
-     - Novice-Group B Second Place
-   * - 1345 
-     - Novice-Group A First Place
+     - Novice-Group B's 2nd Place
+   * - 1400 
+     - Novice-Group A 1st Place
      - vs
-     - Novice-Group B First Place
+     - Novice-Group B 1st Place
    * - 1430 
-     - Advanced-Group B Second Place
+     - Advanced-Group B 2nd Place
      - vs
-     - Advanced-Group A Second Place
-   * - 1515
-     - Advanced-Group A First Place
+     - Advanced-Group A 2nd Place
+   * - 1500
+     - Advanced-Group A 1st Place
      - vs
-     - Advanced-Group B First Place
-   * - 1600
+     - Advanced-Group B 1st Place
+   * - 1530
      - Organisers audit results.
      -
      -
-   * - 1645
+   * - 1545
      - Seated for award ceremony
      -
      - 
-   * - 1700
-     - Award Ceremony 
+   * - 1600
+     - Award Ceremony Begins 
      -
      -  
